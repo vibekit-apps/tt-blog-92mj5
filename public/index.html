@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Notes</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/">Notes</a>
+  <nav>
+    <a href="#categories" id="cat-toggle">Categories</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>A handful of essays on building.</h1>
+    <p class="muted">Thinking-in-public from a small team.</p>
+  </section>
+
+  <section class="filter-bar" id="filter-bar">
+    <button class="cat active" data-cat="">All</button>
+  </section>
+
+  <section class="post-list" id="post-list"></section>
+</main>
+
+<footer>
+  <span>Notes — your blog scaffold to fork.</span>
+</footer>
+
+<script src="/app.js"></script>
+<script>blog.bindHome();</script>
+</body>
+</html>
